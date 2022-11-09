@@ -1,5 +1,6 @@
 set autowrite " writes content of files automatically if :make is called
 set number " display line numbers
+set relativenumber " display relative line numbers
 set belloff=all " set bell noise off
 set cursorline " highlight the cursorline
 set colorcolumn=80 " set line length marker to 80 characters
@@ -50,3 +51,10 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 " https://vim.fandom.com/wiki/Insert_current_date_or_time
 nnoremap <F5> "=strftime("TODO: PAK_%a-%d-%b:%Y-%H-%M-%S-%Z: ")<CR>P
 inoremap <F5> <C-R>=strftime("TODO: PAK_%a-%d-%b-%Y:%H-%M-%S-%Z: ")<CR>
+
+" nnoremap <leader>n :NERDTreeFocus<CR>
+" nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-q> :NERDTreeToggle<CR>
+" nnoremap <C-f> :NERDTreeFind<CR>
+" links
+" https://vim.fandom.com/wiki/Avoid_the_escape_key#Avoiding_the_Esc_key
