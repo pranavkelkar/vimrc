@@ -58,3 +58,4 @@ nnoremap <C-q> :NERDTreeToggle<CR>
 " nnoremap <C-f> :NERDTreeFind<CR>
 " links
 " https://vim.fandom.com/wiki/Avoid_the_escape_key#Avoiding_the_Esc_key
+let g:go_addtags_transform = 'camelcase'
